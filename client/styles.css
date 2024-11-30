@@ -1,0 +1,129 @@
+html, body {
+    background-color: #505050;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+#title_bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #303030;
+    color: aliceblue;
+    margin: 0px;
+    text-align: center;
+    user-select: none;
+}
+
+#page {
+    position: fixed;
+    top: 10%;
+    height: 90%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#conversations {
+    background-color: #808080;
+    margin: 5px;
+    width: 20%;
+    user-select: none;
+}
+
+#chatbox {
+    position: relative;
+    background-color: #808080;
+    margin: 5px;
+    margin-left: 0;
+    padding: 5px;
+    width: 80%;
+}
+
+#messages {
+    height: 100%;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#messages::-webkit-scrollbar {
+    display: none;
+}
+
+#messages_bot {
+    height: 55px;
+}
+
+#input_bar {
+    margin: 5px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+#message_input {
+    background-color: #202020;
+    height: 35px;
+    color: white;
+    font-size: large;
+    border: none;
+    border: solid, #202020;
+    border-radius: 35px;
+    padding-left: 10px;
+    width: 75%;
+}
+
+#message_input:focus {
+    outline: none;
+    caret-color: #808080;
+}
+
+#send_button {
+    height: 42px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #202020;
+    border: none;
+    border-radius: 35px;
+    color: white;
+    transition: background-color 0.3s ease;
+    cursor: default;
+}
+
+#send_button:hover {
+    background-color: #303030;
+    cursor: pointer;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #202020;
+    margin-top: 5px;
+    padding: 5px;
+    width: max-content;
+    border-radius: 5px;
+}
+
+.message_header {
+    display: flex;
+    flex-direction: row;
+}
+
+.pfp {
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.author_name {
+    margin-right: 15px;
+}
+
+.message_text {
+    margin-left: 15px;
+    margin-right: 15px;
+}
